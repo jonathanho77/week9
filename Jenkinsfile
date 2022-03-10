@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('First Stage') {
             steps {
-		    git url: 'https://github.com/leszko/calculator.git'
+		    git url: 'https://github.com/jonathanho77/week9.git'
             }
             
         }
