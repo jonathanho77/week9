@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage('First Stage') {
             steps {
-                sh "kubectl apply -f calculator.yaml"
-				sh "kubectl apply -f hazelcast.yaml"
+		    git url: 'https://github.com/leszko/calculator.git'
             }
             
         }
