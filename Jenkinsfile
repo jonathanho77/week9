@@ -7,6 +7,7 @@ pipeline {
         stage('First Stage') {
             steps {
 		    git url: 'https://github.com/jonathanho77/week9.git'
+		    sh "kubectl apply -f calculator.yaml"
             }
             
         }
